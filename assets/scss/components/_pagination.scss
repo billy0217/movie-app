@@ -1,0 +1,37 @@
+.pagination-btn {
+	@apply bg-transparent text-martin-darkGray;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s ease;
+
+	&:hover:not(:disabled) {
+	  @apply bg-martin-lighten text-martin-purple;
+	}
+
+	&:disabled {
+  		@apply bg-transparent text-martin-light;
+  		cursor: not-allowed;
+	}
+
+	&.active {
+  		@apply bg-martin-purple text-white;
+	}
+
+	&.arrow-btn {
+		@apply bg-transparent text-martin-darkGray;
+
+		&:hover:not(:disabled) {
+	  		@apply bg-martin-lighten text-martin-purple;
+		}
+
+		&:disabled {
+	  		@apply bg-transparent text-gray-500;
+	  		cursor: not-allowed;
+		}
+	}
+
+}

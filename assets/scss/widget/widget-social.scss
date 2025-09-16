@@ -1,0 +1,51 @@
+.social-btns {
+	margin-top: 30px;
+}
+.social-btn-roll {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4d5154;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    transition: background .3s ease;
+
+    &:hover,
+    &:focus {
+    	border-color: transparent;
+
+    	.social-btn-roll-icons {
+    		transform: translateX(-50%);
+    	}
+
+    	&.facebook {
+    		background-color: #3b5998;
+    	}
+
+    	&.twitter {
+    		background-color: #4cc4f2;
+    	}
+
+    	&.google-plus {
+    		background-color: #dd4b39;
+    	}
+
+    	&.instagram {
+    		background-color: #9b6954;
+    	}
+    }
+
+    .social-btn-roll-icons {
+		width: 200%;
+		transition: all .3s ease;
+    }
+
+    .social-btn-roll-icon {
+	    width: 50%;
+	    line-height: 35px;
+	    display: block;
+	    float: left;
+	    transition: all .3s;
+	    text-align: center;
+	}
+}

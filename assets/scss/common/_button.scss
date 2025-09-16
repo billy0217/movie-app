@@ -1,0 +1,79 @@
+.btn {
+	outline: 0;
+    padding: 0 15px;
+    position: relative;
+    font-weight: 600;
+    border: 0;
+    transition: all .5s ease;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: all .5s ease;
+
+    &:not(:disabled):not(.disabled) {
+    	cursor: pointer;
+    }
+}
+
+.btn-main,
+.btn-second {
+    @apply text-white bg-martin-purple;
+
+    &:hover,
+    &:focus {
+    	filter: brightness(113%);
+    }
+}
+
+.btn-effect {
+	overflow: hidden;
+}
+
+.btn-layout {
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	transition: all .4s;
+}
+
+.login-btn {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-top-btn {
+    @apply bg-martin-purple text-white;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 26px;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,23 @@
+/* common */
+@use "common/global";
+@use "common/button";
+@use "common/loading";
+
+/* components */
+@use "components/movie-card";
+@use "components/pagination";
+@use "components/filter-select";
+@use "components/search-bar";
+@use "components/hero-banner";
+
+/* widget */
+@use "widget/widget-social";
+
+/* layout */
+@use "layout/header";
+@use "layout/mobile-menu";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
